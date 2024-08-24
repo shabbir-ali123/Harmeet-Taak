@@ -232,11 +232,15 @@ nav ul li a.active {
   align-items: center;
   justify-content: space-between;
   padding: 24px;
-  background-color: #282454;
-  border: 0.5px solid white;
+  background-color: #272858;
+
   border-radius: 2px;
   font-weight: 700;
   flex-wrap: wrap;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 0.5px solid;
+  border-image: linear-gradient(to right, #48436a, #48436a) 1;
 }
 
 .stat {
@@ -1120,4 +1124,52 @@ textarea:focus::placeholder {
   .testimonial-card {
     padding: 20px;
   }
+}
+
+.top-background {
+  height: 254px;
+  z-index: 0;
+  width: 18%;
+  top: 9%;
+  border-radius: 50%;
+  background: #00bfff;
+
+  filter: blur(220px);
+  position: absolute;
+  left: 4%;
+}
+.top-right-background {
+  height: 255px;
+  z-index: 0;
+  width: 18%;
+  top: 30%;
+  border-radius: 50%;
+  background: #00bfff;
+
+  filter: blur(220px);
+  position: absolute;
+
+  right: 4%;
+}
+.service-background {
+  height: 255px;
+  z-index: 0;
+  width: 18%;
+  top: 177%;
+  border-radius: 50%;
+  background: #00bfff;
+  filter: blur(220px);
+  position: absolute;
+  left: 13%;
+}
+.portfolio-background {
+  height: 381px;
+  z-index: 0;
+  width: 28%;
+
+  border-radius: 50%;
+  background: #00bfff;
+  filter: blur(220px);
+  position: absolute;
+  left: 36%;
 }
