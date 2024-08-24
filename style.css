@@ -296,6 +296,7 @@ nav ul li a.active {
 
   font-weight: bold;
   font-family: "Lato", sans-serif;
+  text-transform: capitalize;
 }
 
 .line {
@@ -796,15 +797,6 @@ nav ul li a.active {
   color: #b3b3b3;
   font-family: "satoshi";
 }
-@media (max-width: 768px) {
-  .testimonial-grid {
-    display: flex;
-    flex-direction: column;
-  }
-  .testimonial-card {
-    padding: 20px;
-  }
-}
 
 /* contact */
 .form {
@@ -1118,5 +1110,14 @@ textarea:focus::placeholder {
   }
   .section-header h2 {
     font-size: 34px;
+  }
+}
+@media (max-width: 768px) {
+  .testimonial-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonial-card {
+    padding: 20px;
   }
 }
