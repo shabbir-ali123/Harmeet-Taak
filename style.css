@@ -1012,6 +1012,8 @@ textarea:focus::placeholder {
   text-align: center;
   padding-top: 75px;
   padding-bottom: 24px;
+  font-size: 30px;
+  font-weight: bold;
 }
 .heading h1 {
   font-size: 40px;
@@ -1060,7 +1062,7 @@ textarea:focus::placeholder {
   font-size: 2.2em;
 }
 .project-details p {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .project-details span {
@@ -1072,8 +1074,14 @@ textarea:focus::placeholder {
 .process-container {
   width: 85%;
   margin: 0 auto;
+  padding-bottom: 7rem;
 }
-.heading h3 {
+.heading-image{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading-image h3 {
   font-size: 28px;
   font-weight: 500;
 }
@@ -1102,6 +1110,17 @@ textarea:focus::placeholder {
 }
 .circle-container img {
   width: 50px;
+}
+@media (max-width: 768px) {
+  .process-details{
+    flex-direction: column;
+    gap: 37px;
+  }
+  .heading-image{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
 }
 /* responsive nessa */
 
@@ -1173,3 +1192,137 @@ textarea:focus::placeholder {
   position: absolute;
   left: 36%;
 }
+
+/* research sectiom */
+
+.user-research{
+  width: 100%;
+}
+.research-image{
+  width: 85%;
+  margin: 0 auto;
+}
+#research-heading{
+ color: #0080EF;
+}
+.research-details{
+  width: 100%;
+  background: linear-gradient(135deg, #0d1a3d, #1b2b5a);
+  padding-bottom: 1rem;
+  margin-top: 5rem;
+}
+.research-container{
+  width: 85%;
+  margin: 0 auto;
+}
+.research-container h1{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.research-list {
+  list-style: none;
+  margin-top: 35px;
+}
+
+.research-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.research-list li::before {
+  content: "•";
+  margin-right: 10px;
+  color: #008ecc;
+  font-size: 2.2em;
+}
+.research-list p {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.research-list span {
+  font-weight: bold;
+  color: #008ecc;
+  line-height: 1.2em;
+}
+/* design section */
+.design-details{
+  width: 85%;
+  margin: 0 auto;
+  list-style: none;
+}
+.design-details h3{
+  padding-bottom: 1rem;
+}
+.design-details li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.design-details li::before {
+  content: "•";
+  margin-right: 10px;
+  color: #008ecc;
+  font-size: 2.2em;
+}
+.design-details p {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.design-details span {
+  font-weight: bold;
+  color: #008ecc;
+  line-height: 1.2em;
+}
+/* pain-points section */
+.pain-points{
+  width: 100%;
+  background: linear-gradient(135deg, #0d1a3d, #1b2b5a);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.points-container{
+  width: 85%;
+  margin: 0 auto;
+  list-style: none;
+}
+.points-container h3{
+  padding-bottom: 1rem;
+}
+.points-container li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.points-container li::before {
+  content: "•";
+  margin-right: 10px;
+  color: #008ecc;
+  font-size: 2.2em;
+}
+.points-container p {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.points-container span {
+  font-weight: bold;
+  color: #008ecc;
+  line-height: 1.2em;
+}
+/* user persona */
+.user-image{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.user-image img{
+  width: 80%;
+}
+/* visual design */
