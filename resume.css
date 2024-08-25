@@ -1,51 +1,78 @@
+/* Timeline Styles */
 .timeline {
-  position: relative;
-  padding-left: 30px;
   margin-left: 80px;
   border-left: 1px solid #00bfff;
   font-family: "Inter", sans-serif;
+  padding-bottom: 60px;
+  position: relative;
 }
-
-.timeline::before {
-  content: "";
+.work-img {
   position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background-color: #008ecc;
+  left: -18px;
+  top: -28px;
+}
+.timeline-circle {
+  width: 15px;
+  height: 15px;
+  background-color: #00bfff;
+  position: absolute;
+  z-index: 999999;
+  border-radius: 50%;
+  left: -8px;
+  top: 114px;
 }
 
-.timeline-item {
+.timeline__item {
   padding-left: 67px;
 }
+.timeline-resume {
+  padding-top: 60px;
+}
 
-.timeline-item h3 {
+.timeline__title {
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 60px;
   line-height: 42px;
   letter-spacing: 3px;
   font-size: 28px;
 }
-
-.timeline-item span {
+.timeline__company {
+  margin-bottom: 6px;
+  font-size: 28px;
+  font-weight: 600;
+}
+.timeline__date {
   font-weight: 400;
   font-size: 20px;
   color: #cccccc;
   margin-bottom: 34px;
 }
-
-.timeline-item p {
+.timeline__subdate {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+.timeline-description {
+  margin: 32px 0px;
+}
+.timeline__project,
+.timeline__tools {
   margin-top: 34px;
   font-size: 24px;
   margin-bottom: 24px;
+  letter-spacing: 2px;
 }
 
-.timeline-item ul {
+.timeline__role-title {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 24px 0px;
+}
+
+.timeline__role-list {
   padding-left: 20px;
 }
 
-.timeline-item ul li {
+.timeline__role-list .role-list__item {
   margin-bottom: 24px;
   list-style: disc;
   font-size: 26px;
@@ -54,8 +81,19 @@
   line-height: 42px;
 }
 
-.timeline-item ul li:last-child {
+.timeline__role-list .role-list__item:last-child {
   margin-bottom: 0;
+}
+.dgn-title {
+  margin-bottom: 15px;
+  font-size: 28px;
+  text-transform: capitalize;
+}
+.education-title {
+  margin-top: 60px;
+}
+.resume {
+  /* position: relative; */
 }
 
 .main-heading {
@@ -64,39 +102,98 @@
   text-transform: capitalize;
   margin-bottom: 60px;
 }
-
+.resume-top-background {
+  top: 3%;
+  left: 5%;
+}
+.resume-right-background {
+  top: 12%;
+}
+.resume-middle-bg {
+  top: 60% !important;
+}
+.resume-header {
+  margin-top: 130px;
+  /* margin-bottom: 80px; */
+}
+.education-img {
+  position: absolute;
+  left: -18px;
+  top: 63px;
+}
+.resume-para {
+  margin-bottom: 80px;
+}
+.education-circle {
+  top: 168px;
+}
+.education-circle1 {
+  bottom: 44%;
+  width: 15px;
+  height: 15px;
+  background-color: #00bfff;
+  position: absolute;
+  z-index: 999999;
+  border-radius: 50%;
+  left: -8px;
+}
+.education-circle2 {
+  width: 15px;
+  height: 15px;
+  background-color: #00bfff;
+  position: absolute;
+  z-index: 999999;
+  border-radius: 50%;
+  left: -8px;
+  bottom: 20%;
+}
+.download-resume {
+  gap: 50px;
+}
+.download-resume-btn {
+  width: 335px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background: #1d1546;
+}
 /* Responsive Styles */
 @media (max-width: 1200px) {
-  .timeline-item h3 {
-    font-size: 26px;
+  .timeline__title {
+    font-size: 32px;
     line-height: 38px;
   }
-  .timeline-item span {
-    font-size: 18px;
+  .timeline__date {
+    font-size: 20px;
   }
-  .timeline-item p {
-    font-size: 22px;
-  }
-  .timeline-item ul li {
+  .timeline__project,
+  .timeline__tools {
     font-size: 24px;
+  }
+  .timeline__role-list .role-list__item {
+    font-size: 26px;
   }
 }
 
 @media (max-width: 992px) {
-  .timeline-item {
+  .timeline__item {
     padding-left: 50px;
   }
-  .timeline-item h3 {
+  .timeline__title {
     font-size: 24px;
     line-height: 34px;
   }
-  .timeline-item span {
+  .timeline__date {
     font-size: 16px;
   }
-  .timeline-item p {
+  .timeline__project,
+  .timeline__tools {
     font-size: 20px;
   }
-  .timeline-item ul li {
+  .timeline__role-list .role-list__item {
     font-size: 22px;
   }
   .main-heading {
@@ -105,20 +202,21 @@
 }
 
 @media (max-width: 768px) {
-  .timeline-item {
+  .timeline__item {
     padding-left: 40px;
   }
-  .timeline-item h3 {
+  .timeline__title {
     font-size: 22px;
     line-height: 30px;
   }
-  .timeline-item span {
+  .timeline__date {
     font-size: 14px;
   }
-  .timeline-item p {
+  .timeline__project,
+  .timeline__tools {
     font-size: 18px;
   }
-  .timeline-item ul li {
+  .timeline__role-list .role-list__item {
     font-size: 20px;
   }
   .main-heading {
@@ -129,32 +227,38 @@
 @media (max-width: 576px) {
   .resume {
     width: 100%;
-    padding: 0 10px;
+    /* padding: 0 10px; */
   }
   .timeline {
-    padding-left: 20px;
-    margin-left: 0;
+    padding-left: 10px;
+    margin-left: 20px;
   }
-  .timeline-item {
+  .timeline__item {
     padding-left: 30px;
   }
-  .timeline-item h3 {
+  .timeline__title {
     font-size: 20px;
     line-height: 28px;
   }
-  .timeline-item span {
+  .timeline__date {
     font-size: 12px;
   }
-  .timeline-item p {
+  .timeline__project,
+  .timeline__tools {
     font-size: 16px;
   }
-  .timeline-item ul li {
+  .timeline__role-list .role-list__item {
     font-size: 18px;
   }
   .main-heading {
     font-size: 22px;
   }
 }
+
 .resume-2 {
   background: #28214f;
+}
+
+.dgn-tech {
+  margin-bottom: 10px;
 }
