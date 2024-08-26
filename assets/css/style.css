@@ -1003,6 +1003,17 @@ textarea:focus::placeholder {
 }
 
 /* portfolio sec */
+.overview-background{
+  height: 121px;
+  z-index: 0;
+  width: 12%;
+  top: 41%;
+  border-radius: 58%;
+  background: #00bfff;
+  filter: blur(223px);
+  position: absolute;
+  left: 18%;
+}
 .overview-section {
   width: 100%;
   background: linear-gradient(135deg, #0d1a3d, #1b2b5a);
@@ -1016,7 +1027,9 @@ textarea:focus::placeholder {
   text-align: center;
   padding-top: 75px;
   padding-bottom: 24px;
-  font-size: 30px;
+}
+.section-heading{
+  font-size: 35px;
   font-weight: bold;
 }
 .heading h1 {
@@ -1030,7 +1043,7 @@ textarea:focus::placeholder {
 }
 .overview-details p {
   line-height: 40px;
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 400;
   padding-bottom: 4rem;
 }
@@ -1039,6 +1052,7 @@ textarea:focus::placeholder {
 .project-container {
   width: 85%;
   margin: 0 auto;
+  font-family: "Inter", sans-serif;
 }
 .project-heading {
   padding-top: 55px;
@@ -1066,7 +1080,7 @@ textarea:focus::placeholder {
   font-size: 2.2em;
 }
 .project-details p {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .project-details span {
@@ -1075,6 +1089,16 @@ textarea:focus::placeholder {
   line-height: 1.2em;
 }
 /* my process */
+.process-background{
+  height: 140px;
+  z-index: 0;
+  width: 19%;
+  border-radius: 58%;
+  background: #00bfff;
+  filter: blur(174px);
+  position: absolute;
+  left: 57%
+}
 .process-container {
   width: 85%;
   margin: 0 auto;
@@ -1084,10 +1108,6 @@ textarea:focus::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.heading-image h3 {
-  font-size: 28px;
-  font-weight: 500;
 }
 .process-details {
   display: flex;
@@ -1168,10 +1188,8 @@ textarea:focus::placeholder {
   top: 30%;
   border-radius: 50%;
   background: #00bfff;
-
   filter: blur(220px);
   position: absolute;
-
   right: 4%;
 }
 .service-background {
@@ -1198,8 +1216,22 @@ textarea:focus::placeholder {
 }
 
 /* research sectiom */
+<<<<<<< HEAD:assets/css/style.css
 
 .user-research {
+=======
+.research-background{
+  height: 140px;
+  z-index: 0;
+  width: 19%;
+  border-radius: 58%;
+  background: #00bfff;
+  filter: blur(174px);
+  position: absolute;
+  left: 18%;
+}
+.user-research{
+>>>>>>> 1989d77c5acd64c2b1839e9256333a2a8882f61f:style.css
   width: 100%;
 }
 .research-image {
@@ -1222,6 +1254,10 @@ textarea:focus::placeholder {
 .research-container h1 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  font-size: 30px;
+}
+.research-container h3{
+  font-size: 26px;
 }
 .research-list {
   list-style: none;
@@ -1241,8 +1277,9 @@ textarea:focus::placeholder {
   font-size: 2.2em;
 }
 .research-list p {
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 24px;
+  font-weight: 100;
+  font-family: "Inter", sans-serif;
 }
 
 .research-list span {
@@ -1250,14 +1287,29 @@ textarea:focus::placeholder {
   color: #008ecc;
   line-height: 1.2em;
 }
+
 /* design section */
+<<<<<<< HEAD:assets/css/style.css
 .design-details {
+=======
+.design-heading{
+  font-size: 33px;
+  font-weight: 500;
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.design-details{
+>>>>>>> 1989d77c5acd64c2b1839e9256333a2a8882f61f:style.css
   width: 85%;
   margin: 0 auto;
   list-style: none;
 }
 .design-details h3 {
   padding-bottom: 1rem;
+  font-size: 26px;
 }
 .design-details li {
   display: flex;
@@ -1272,7 +1324,7 @@ textarea:focus::placeholder {
   font-size: 2.2em;
 }
 .design-details p {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 200;
 }
 
@@ -1295,6 +1347,7 @@ textarea:focus::placeholder {
 }
 .points-container h3 {
   padding-bottom: 1rem;
+  font-size: 26px;
 }
 .points-container li {
   display: flex;
@@ -1309,7 +1362,7 @@ textarea:focus::placeholder {
   font-size: 2.2em;
 }
 .points-container p {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 200;
 }
 
@@ -1326,7 +1379,68 @@ textarea:focus::placeholder {
   justify-content: center;
   padding-top: 2rem;
 }
+<<<<<<< HEAD:assets/css/style.css
 .user-image img {
   width: 80%;
 }
 /* visual design */
+=======
+.persona-image{
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.user-image img{
+  width: 80%;
+}
+/* visual design */
+.visual-design{
+  width: 100%;
+}
+.visual-container{
+  width: 85%;
+  margin: 0 auto;
+}
+.visual-image{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 4rem;
+  padding-top: 3rem;
+}
+.visual-image img{
+  width: 80%;
+}
+/* analysis-section */
+.analysis{
+  width: 100%;
+  background: linear-gradient(135deg, #0d1a3d, #1b2b5a);
+  padding-bottom: 5rem;
+}
+.analysis-container{
+  width: 85%;
+  margin: 0 auto;
+}
+.analysis-heading{
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  font-size: 26px;
+}
+.analysis-details{
+  color: #ffffffa8;
+  font-size: 24px;
+}
+.analysis-list{
+  color: #ffffffa8;
+  font-size: 24px;
+  padding-top: 2rem;
+}
+.analysis-end{
+  padding-top: 3rem;
+  font-size: 23px;
+}
+>>>>>>> 1989d77c5acd64c2b1839e9256333a2a8882f61f:style.css
