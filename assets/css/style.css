@@ -1003,7 +1003,7 @@ textarea:focus::placeholder {
 }
 
 /* portfolio sec */
-.overview-background{
+.overview-background {
   height: 121px;
   z-index: 0;
   width: 12%;
@@ -1028,7 +1028,7 @@ textarea:focus::placeholder {
   padding-top: 75px;
   padding-bottom: 24px;
 }
-.section-heading{
+.section-heading {
   font-size: 35px;
   font-weight: bold;
 }
@@ -1089,7 +1089,7 @@ textarea:focus::placeholder {
   line-height: 1.2em;
 }
 /* my process */
-.process-background{
+.process-background {
   height: 140px;
   z-index: 0;
   width: 19%;
@@ -1097,7 +1097,7 @@ textarea:focus::placeholder {
   background: #00bfff;
   filter: blur(174px);
   position: absolute;
-  left: 57%
+  left: 57%;
 }
 .process-container {
   width: 85%;
@@ -1216,11 +1216,7 @@ textarea:focus::placeholder {
 }
 
 /* research sectiom */
-<<<<<<< HEAD:assets/css/style.css
-
-.user-research {
-=======
-.research-background{
+.research-background {
   height: 140px;
   z-index: 0;
   width: 19%;
@@ -1230,8 +1226,7 @@ textarea:focus::placeholder {
   position: absolute;
   left: 18%;
 }
-.user-research{
->>>>>>> 1989d77c5acd64c2b1839e9256333a2a8882f61f:style.css
+.user-research {
   width: 100%;
 }
 .research-image {
@@ -1256,7 +1251,7 @@ textarea:focus::placeholder {
   padding-bottom: 2rem;
   font-size: 30px;
 }
-.research-container h3{
+.research-container h3 {
   font-size: 26px;
 }
 .research-list {
@@ -1289,10 +1284,7 @@ textarea:focus::placeholder {
 }
 
 /* design section */
-<<<<<<< HEAD:assets/css/style.css
-.design-details {
-=======
-.design-heading{
+.design-heading {
   font-size: 33px;
   font-weight: 500;
   width: 85%;
@@ -1301,8 +1293,7 @@ textarea:focus::placeholder {
   padding-bottom: 2rem;
 }
 
-.design-details{
->>>>>>> 1989d77c5acd64c2b1839e9256333a2a8882f61f:style.css
+.design-details {
   width: 85%;
   margin: 0 auto;
   list-style: none;
@@ -1379,30 +1370,24 @@ textarea:focus::placeholder {
   justify-content: center;
   padding-top: 2rem;
 }
-<<<<<<< HEAD:assets/css/style.css
-.user-image img {
-  width: 80%;
-}
-/* visual design */
-=======
-.persona-image{
+.persona-image {
   width: 85%;
   margin: 0 auto;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-.user-image img{
+.user-image img {
   width: 80%;
 }
 /* visual design */
-.visual-design{
+.visual-design {
   width: 100%;
 }
-.visual-container{
+.visual-container {
   width: 85%;
   margin: 0 auto;
 }
-.visual-image{
+.visual-image {
   width: 100%;
   display: flex;
   align-items: center;
@@ -1412,35 +1397,34 @@ textarea:focus::placeholder {
   padding-bottom: 4rem;
   padding-top: 3rem;
 }
-.visual-image img{
+.visual-image img {
   width: 80%;
 }
 /* analysis-section */
-.analysis{
+.analysis {
   width: 100%;
   background: linear-gradient(135deg, #0d1a3d, #1b2b5a);
   padding-bottom: 5rem;
 }
-.analysis-container{
+.analysis-container {
   width: 85%;
   margin: 0 auto;
 }
-.analysis-heading{
+.analysis-heading {
   padding-top: 4rem;
   padding-bottom: 2rem;
   font-size: 26px;
 }
-.analysis-details{
+.analysis-details {
   color: #ffffffa8;
   font-size: 24px;
 }
-.analysis-list{
+.analysis-list {
   color: #ffffffa8;
   font-size: 24px;
   padding-top: 2rem;
 }
-.analysis-end{
+.analysis-end {
   padding-top: 3rem;
   font-size: 23px;
 }
->>>>>>> 1989d77c5acd64c2b1839e9256333a2a8882f61f:style.css
