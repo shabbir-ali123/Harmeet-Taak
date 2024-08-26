@@ -69,17 +69,26 @@
 
 .blue-light {
   border-top-color: #00bfff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .blue-medium {
   border-right-color: #00bfff;
   border-top-color: #00bfff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .blue-dark {
   border-top-color: #00bfff;
   border-bottom-color: #00bfff;
   border-right-color: #00bfff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .selection-heading {
@@ -489,6 +498,7 @@ text-transform: capitalize;
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  align-items: baseline;
 }
 
 .design-existing p {
@@ -535,4 +545,16 @@ text-transform: capitalize;
 .existing-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.design-existing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .enhancement-item {
+    border: none !important;
+  }
 }
