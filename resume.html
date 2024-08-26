@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="resume.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/resume.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,11 +37,11 @@
       </div>
       <nav>
         <ul>
-          <li><a href="" class="active">Home</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">About me</a></li>
+          <li><a href="./index.html#home" class="active">Home</a></li>
+          <li><a href="./index.html#services">Services</a></li>
+          <li><a href="./index.html#about">About me</a></li>
           <li><a href="">Portfolio</a></li>
-          <li><a href="">Contact me</a></li>
+          <li><a href="./index.html#contact">Contact me</a></li>
         </ul>
       </nav>
       <div class="header-right">
@@ -403,11 +403,6 @@
         <p class="footer-bottom">© 2024 Made by Harmeet Taak.</p>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
-
-  <script>
-    document.querySelector(".hamburger").addEventListener("click", function () {
-      document.querySelector("nav ul").classList.toggle("show");
-    });
-  </script>
 </html>

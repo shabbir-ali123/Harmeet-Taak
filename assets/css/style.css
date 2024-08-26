@@ -85,7 +85,11 @@ nav ul li a.active {
   margin: 6px 0;
   background: #fff;
 }
-
+#services,
+#contact,
+#about {
+  margin-top: 60px;
+}
 /* Responsive Styles */
 @media only screen and (max-width: 768px) {
   header {
@@ -1076,7 +1080,7 @@ textarea:focus::placeholder {
   margin: 0 auto;
   padding-bottom: 7rem;
 }
-.heading-image{
+.heading-image {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1112,11 +1116,11 @@ textarea:focus::placeholder {
   width: 50px;
 }
 @media (max-width: 768px) {
-  .process-details{
+  .process-details {
     flex-direction: column;
     gap: 37px;
   }
-  .heading-image{
+  .heading-image {
     display: flex;
     flex-direction: column;
     gap: 22px;
@@ -1195,27 +1199,27 @@ textarea:focus::placeholder {
 
 /* research sectiom */
 
-.user-research{
+.user-research {
   width: 100%;
 }
-.research-image{
+.research-image {
   width: 85%;
   margin: 0 auto;
 }
-#research-heading{
- color: #0080EF;
+#research-heading {
+  color: #0080ef;
 }
-.research-details{
+.research-details {
   width: 100%;
   background: linear-gradient(135deg, #0d1a3d, #1b2b5a);
   padding-bottom: 1rem;
   margin-top: 5rem;
 }
-.research-container{
+.research-container {
   width: 85%;
   margin: 0 auto;
 }
-.research-container h1{
+.research-container h1 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -1247,12 +1251,12 @@ textarea:focus::placeholder {
   line-height: 1.2em;
 }
 /* design section */
-.design-details{
+.design-details {
   width: 85%;
   margin: 0 auto;
   list-style: none;
 }
-.design-details h3{
+.design-details h3 {
   padding-bottom: 1rem;
 }
 .design-details li {
@@ -1278,18 +1282,18 @@ textarea:focus::placeholder {
   line-height: 1.2em;
 }
 /* pain-points section */
-.pain-points{
+.pain-points {
   width: 100%;
   background: linear-gradient(135deg, #0d1a3d, #1b2b5a);
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-.points-container{
+.points-container {
   width: 85%;
   margin: 0 auto;
   list-style: none;
 }
-.points-container h3{
+.points-container h3 {
   padding-bottom: 1rem;
 }
 .points-container li {
@@ -1315,14 +1319,14 @@ textarea:focus::placeholder {
   line-height: 1.2em;
 }
 /* user persona */
-.user-image{
+.user-image {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 2rem;
 }
-.user-image img{
+.user-image img {
   width: 80%;
 }
 /* visual design */

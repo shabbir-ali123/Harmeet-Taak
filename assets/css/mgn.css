@@ -1,0 +1,103 @@
+.overview {
+  width: 100%;
+  /* background: linear-gradient(135deg, #0d1a3d, #1b2b5a); */
+  background: #28214f;
+  margin-top: 25px;
+  font-family: "Inter", sans-serif;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+.overview-heading {
+  text-align: center;
+  padding: 75px 0 48px 0;
+  font-size: 56px;
+  font-weight: 500;
+}
+
+.overview-content h3 {
+  padding-bottom: 34px;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.overview-content p {
+  line-height: 40px;
+  font-size: 26px;
+  font-weight: 400;
+  padding-bottom: 4rem;
+}
+.problem-statement-section {
+  background-color: #1a1b41;
+  color: #ffffff;
+  padding: 50px 0px;
+  /* border-radius: 10px; */
+  font-family: "Inter", sans-serif;
+}
+
+.problem-heading {
+  margin-bottom: 30px;
+}
+
+.progress-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.progress-item {
+  text-align: center;
+  flex: 1;
+}
+
+.circular-progress {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 30px solid #18265e;
+  position: relative;
+  margin: 0 auto 20px auto;
+}
+
+.blue-light {
+  border-top-color: #00bfff;
+}
+
+.blue-medium {
+  border-right-color: #00bfff;
+  border-top-color: #00bfff;
+}
+
+.blue-dark {
+  border-top-color: #00bfff;
+  border-bottom-color: #00bfff;
+  border-right-color: #00bfff;
+}
+
+.selection-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.progress-item {
+  font-size: 20px;
+}
+
+.additional-info {
+  margin-top: 30px;
+}
+.problem-heading h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.problem-heading p {
+  font-size: 26px;
+  margin-bottom: 60px;
+}
+.additional-info-detail {
+  margin-top: 95px;
+
+  font-size: 26px;
+}

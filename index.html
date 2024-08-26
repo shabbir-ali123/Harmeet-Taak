@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,11 +36,11 @@
       </div>
       <nav>
         <ul>
-          <li><a href="" class="active">Home</a></li>
-          <li><a href="./resume.html">Services</a></li>
-          <li><a href="">About me</a></li>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About me</a></li>
           <li><a href="">Portfolio</a></li>
-          <li><a href="">Contact me</a></li>
+          <li><a href="#contact">Contact me</a></li>
         </ul>
       </nav>
       <div class="header-right">
@@ -57,7 +57,7 @@
     <!-- hero section  -->
     <div class="top-background"></div>
     <div class="main-container">
-      <section class="hero-section">
+      <section id="home" class="hero-section">
         <div class="hero">
           <div class="hero-content">
             <h1>
@@ -97,7 +97,7 @@
 
       <!-- scetion services  -->
       <div class="service-background"></div>
-      <section class="services">
+      <section id="services" class="services">
         <div class="section-header">
           <div class="line"></div>
           <h2>Services</h2>
@@ -177,7 +177,7 @@
 
     <div class="container">
       <!-- Portfolio section  -->
-      <section class="portfolio">
+      <section id="portfolio" class="portfolio">
         <div class="main-container">
           <div class="section-header">
             <div class="line"></div>
@@ -256,7 +256,7 @@
       </section>
 
       <!-- about me section  -->
-      <section class="about-me">
+      <section id="about" class="about-me">
         <div class="main-container">
           <div class="section-header">
             <div class="line"></div>
@@ -286,7 +286,7 @@
               integrate ideas, articulate strategies, and motivate teams across
               various disciplines.
             </p>
-            <a href="#" class="download-cv-btn">
+            <a href="./resume.html" class="download-cv-btn">
               <img src="assets/images/Download.png" alt="Download Icon" />
               Download CV
             </a>
@@ -561,7 +561,7 @@
     </div>
 
     <!-- contact me section  -->
-    <section class="about-me">
+    <section id="contact" class="about-me">
       <div class="main-container">
         <div class="section-header">
           <div class="line"></div>
@@ -672,11 +672,6 @@
         <p class="footer-bottom">© 2024 Made by Harmeet Taak.</p>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
-
-  <script>
-    document.querySelector(".hamburger").addEventListener("click", function () {
-      document.querySelector("nav ul").classList.toggle("show");
-    });
-  </script>
 </html>
