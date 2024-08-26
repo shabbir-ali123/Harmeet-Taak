@@ -10,8 +10,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <header>
       <div class="logo">
         <h1>LOGO</h1>
@@ -38,11 +43,11 @@
     <!-- overview section -->
     <div class="overview-background"></div>
     <section class="overview-section">
-      <div class="overview-container">
+      <div class="overview-container" data-aos="fade-up">
         <div class="heading">
           <h1>Overview</h1>
         </div>
-        <div class="overview-details animate__animated animate__fadeInLeft">
+        <div class="overview-details ">
           <h3>TIBCO - Manager</h3>
           <p>
             Business Connect is an on-premise enterprise B2B platform that
@@ -67,7 +72,7 @@
         <div class="project-heading">
           <h3>Project Goals</h3>
         </div>
-        <div class="project-details animate__animated animate__fadeInRight">
+        <div class="project-details" data-aos="fade-right">
           <li>
             <p>
               <span>Technology Modernization:</span> Transitioning from outdated
@@ -149,8 +154,8 @@
           </div>
         </div>
       </div>
-      <div class="research-details animate__animated animate__fadeInLeft">
-        <div class="research-container">
+      <div class="research-details">
+        <div class="research-container"  data-aos="fade-up">
           <h1>Discovery Phase:</h1>
           <h3>Information Gathering and Stakeholder Discussions</h3>
           <div class="research-list">
@@ -201,10 +206,10 @@
       </div>
     </section>
     <!-- design-section -->
-    <section class="design-research animate__animated animate__fadeInRight">
+    <section class="design-research">
       <div class="design-container">
         <h3 class="design-heading">Design Research</h3>
-        <div class="design-details">
+        <div class="design-details" data-aos="fade-left">
           <h3>Partnering with UX Research:</h3>
           <li>
             <p>
@@ -252,8 +257,8 @@
       </div>
     </section>
     <!-- pain points section -->
-    <section class="pain-points animate__animated animate__bounce animate__repeat-2">
-      <div class="points-container">
+    <section class="pain-points" >
+      <div class="points-container"  data-aos="fade-up-right">
         <h3>Identified Pain Points:</h3>
         <li>
           <p>
@@ -326,7 +331,7 @@
     </section>
     <!-- analysis section -->
     <section class="analysis">
-      <div class="analysis-container">
+      <div class="analysis-container" data-aos="fade-down-right">
         <h3 class="analysis-heading">
           Usability Testing and Success Criteria :
         </h3>
