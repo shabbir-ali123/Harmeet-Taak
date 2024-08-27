@@ -5,19 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- animation link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <header>
       <div class="logo">
         <h1>LOGO</h1>
       </div>
       <nav>
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./resume.html">Services</a></li>
-          <li><a href="#about">About me</a></li>
-          <li><a href="" class="active">Portfolio</a></li>
-          <li><a href="#contact">Contact me</a></li>
+          <li><a href="./index.html#home">Home</a></li>
+          <li><a href="./index.html#services">Services</a></li>
+          <li><a href="./index.html#about">About me</a></li>
+          <li><a href="./portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="./index.html#contact">Contact me</a></li>
         </ul>
       </nav>
       <div class="header-right">
@@ -31,9 +41,9 @@
     </header>
 
     <!-- overview section -->
-    <div class="overview-background"></div>
+    <div class="overview-background background"></div>
     <section class="overview-section">
-      <div class="overview-container">
+      <div class="overview-container" data-aos="fade-up">
         <div class="heading">
           <h1>Overview</h1>
         </div>
@@ -62,7 +72,7 @@
         <div class="project-heading">
           <h3>Project Goals</h3>
         </div>
-        <div class="project-details">
+        <div class="project-details" data-aos="fade-right">
           <li>
             <p>
               <span>Technology Modernization:</span> Transitioning from outdated
@@ -119,7 +129,7 @@
             </div>
             <h3>Idea</h3>
           </div>
-          <div class="process-background"></div>
+          <div class="process-background background"></div>
           <div class="icon-container">
             <div class="circle-container">
               <img src="./assets/images/design.png" alt="" />
@@ -145,7 +155,7 @@
         </div>
       </div>
       <div class="research-details">
-        <div class="research-container">
+        <div class="research-container" data-aos="fade-up">
           <h1>Discovery Phase:</h1>
           <h3>Information Gathering and Stakeholder Discussions</h3>
           <div class="research-list">
@@ -156,7 +166,7 @@
                 success metrics.
               </p>
             </li>
-            <div class="research-background"></div>
+            <div class="research-background background"></div>
             <li>
               <p>
                 <span>Approach: </span>Initiated discussions with the Product
@@ -199,7 +209,7 @@
     <section class="design-research">
       <div class="design-container">
         <h3 class="design-heading">Design Research</h3>
-        <div class="design-details">
+        <div class="design-details" data-aos="fade-left">
           <h3>Partnering with UX Research:</h3>
           <li>
             <p>
@@ -219,7 +229,7 @@
           </li>
         </div>
         <div class="design-details">
-          <div class="research-background"></div>
+          <div class="research-background background"></div>
           <h3>Analysis and Evaluation:</h3>
           <li>
             <p>
@@ -248,7 +258,7 @@
     </section>
     <!-- pain points section -->
     <section class="pain-points">
-      <div class="points-container">
+      <div class="points-container" data-aos="fade-up-right">
         <h3>Identified Pain Points:</h3>
         <li>
           <p>
@@ -321,7 +331,7 @@
     </section>
     <!-- analysis section -->
     <section class="analysis">
-      <div class="analysis-container">
+      <div class="analysis-container" data-aos="fade-down-right">
         <h3 class="analysis-heading">
           Usability Testing and Success Criteria :
         </h3>
@@ -448,10 +458,10 @@
         <div class="footer-section">
           <h3>Pages</h3>
           <ul class="footer-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="./index.html#home">Home</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
           </ul>
           <a href="#" class="download-cv-btn more-templates">
             more templates
@@ -470,5 +480,7 @@
         <p class="footer-bottom">© 2024 Made by Harmeet Taak.</p>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

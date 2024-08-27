@@ -27,8 +27,18 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Readex+Pro:wght@160..700&display=swap"
       rel="stylesheet"
     />
+    <!-- animation link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- header  -->
     <header>
       <div class="logo">
@@ -39,7 +49,7 @@
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#about">About me</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact me</a></li>
         </ul>
       </nav>
@@ -55,11 +65,11 @@
     <!-- header ends here  -->
 
     <!-- hero section  -->
-    <div class="top-background"></div>
+    <div class="top-background background"></div>
     <div class="main-container">
       <section id="home" class="hero-section">
         <div class="hero">
-          <div class="hero-content">
+          <div class="hero-content" data-aos="fade-right">
             <h1>
               Harmeet <br />
               <span>Taak</span>
@@ -74,8 +84,8 @@
               <button class="btn-secondary">Learn more</button>
             </div>
           </div>
-          <div class="top-right-background"></div>
-          <div class="hero-image">
+          <div class="top-right-background background"></div>
+          <div class="hero-image" data-aos="fade-left">
             <img src="assets/images/image 3.png" alt="Harmeet Taak" />
           </div>
         </div>
@@ -96,7 +106,7 @@
       </section>
 
       <!-- scetion services  -->
-      <div class="service-background"></div>
+      <div class="service-background background"></div>
       <section id="services" class="services">
         <div class="section-header">
           <div class="line"></div>
@@ -110,7 +120,7 @@
 
         <div class="services-grid">
           <!-- card 1 -->
-          <div class="service-card">
+          <div class="service-card" data-aos="flip-left">
             <div class="services-content">
               <p class="counting">01</p>
               <h4 class="card-heading">MANAGEMENT ROLE</h4>
@@ -125,7 +135,7 @@
             </div>
           </div>
           <!-- card 2 -->
-          <div class="service-card">
+          <div class="service-card" data-aos="flip-right">
             <div class="services-content">
               <p class="counting">02</p>
               <h4 class="card-heading">UX DESIGN</h4>
@@ -140,7 +150,7 @@
             </div>
           </div>
           <!-- card 3 -->
-          <div class="service-card">
+          <div class="service-card" data-aos="flip-up">
             <div class="services-content">
               <p class="counting">03</p>
               <h4 class="card-heading">Visual Design</h4>
@@ -156,7 +166,7 @@
             </div>
           </div>
           <!-- card 4 -->
-          <div class="service-card">
+          <div class="service-card" data-aos="flip-down">
             <div class="services-content">
               <p class="counting">04</p>
               <h4 class="card-heading">Photography/Sketching</h4>
@@ -184,14 +194,14 @@
             <h2>Portfolio</h2>
             <div class="line"></div>
           </div>
-          <div class="portfolio-background"></div>
+          <div class="portfolio-background background"></div>
           <p class="service-para">
             Take a look at our portfolio to see our work in action
           </p>
         </div>
 
         <div class="portfolio-cards-container">
-          <div class="portfolio-card">
+          <div class="portfolio-card" data-aos="zoom-in">
             <div class="portfolio-image">
               <img src="assets/images/Image.png" alt="Portfolio Item" />
               <div class="overlay"></div>
@@ -207,7 +217,7 @@
             </a>
           </div>
           <!-- card 2 -->
-          <div class="portfolio-card">
+          <div class="portfolio-card" data-aos="zoom-in-up">
             <div class="portfolio-image">
               <img src="assets/images/Image.png" alt="Portfolio Item" />
               <div class="overlay">
@@ -224,7 +234,7 @@
             </a>
           </div>
           <!-- crd 3 -->
-          <div class="portfolio-card">
+          <div class="portfolio-card" data-aos="zoom-in-down">
             <div class="portfolio-image">
               <img src="assets/images/Image.png" alt="Portfolio Item" />
               <div class="overlay">
@@ -241,7 +251,7 @@
             </a>
           </div>
           <!-- card 4 -->
-          <div class="portfolio-card">
+          <div class="portfolio-card" data-aos="zoom-in-left">
             <div class="portfolio-image">
               <img src="assets/images/Image.png" alt="Portfolio Item" />
               <div class="overlay">
@@ -273,18 +283,18 @@
             <h2>About me</h2>
             <div class="line"></div>
           </div>
-          <div class="portfolio-background"></div>
+          <div class="portfolio-background background"></div>
 
           <p class="service-para">
             User Interface and User Experience and Also video editing
           </p>
         </div>
         <div class="profile-container">
-          <div class="business__left">
+          <div class="business__left" data-aos="fade-left">
             <div class="business__image--container"></div>
             <img src="assets/images/image (1).png" alt="" />
           </div>
-          <div class="profile-content">
+          <div class="profile-content" data-aos="fade-right">
             <h1>Harmeet Taak</h1>
             <p>
               With over 20 years of experience as both a Manager and Individual
@@ -319,8 +329,8 @@
           </p>
         </div>
         <div class="testimonial-grid">
-          <div class="card-sec-left">
-            <div class="portfolio-background"></div>
+          <div class="card-sec-left" data-aos="flip-left">
+            <div class="portfolio-background background"></div>
             <!-- card 1 -->
             <div class="testimonial-card">
               <div class="testimonials-svg">
@@ -451,7 +461,7 @@
           </div>
           <div class="card-sec-right">
             <!-- card 3 -->
-            <div class="testimonial-card">
+            <div class="testimonial-card" data-aos="flip-right">
               <div class="testimonials-svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -584,7 +594,7 @@
         </p>
       </div>
 
-      <div class="portfolio-background"></div>
+      <div class="portfolio-background background"></div>
       <form class="form">
         <div class="form-container">
           <div class="input-container-left">

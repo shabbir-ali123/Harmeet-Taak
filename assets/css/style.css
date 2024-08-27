@@ -111,6 +111,7 @@ nav ul li a.active {
 
   nav ul.show {
     display: flex;
+    z-index: 9999;
   }
 
   .hamburger {
@@ -1427,4 +1428,9 @@ textarea:focus::placeholder {
 .analysis-end {
   padding-top: 3rem;
   font-size: 23px;
+}
+@media (max-width: 768px) {
+  .background{
+    display: none !important;
+  }
 }
