@@ -396,6 +396,7 @@ nav ul li a.active {
 .container {
   width: 90%;
   margin: 0 auto;
+  overflow: hidden;
 }
 .portfolio-cards-container {
   display: grid;
@@ -1435,5 +1436,30 @@ textarea:focus::placeholder {
   .portfolio-background,
   .top-right-background {
     display: none !important;
+  }
+
+  .main-container {
+    width: 95%;
+    overflow: hidden;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .design-research {
+    overflow: hidden;
+  }
+  .research-list li {
+    flex-direction: column;
+  }
+  .research-list li::before {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .logo h1 {
+    font-size: 20px;
+  }
+  .hamburger div {
+    margin: 4px 0;
   }
 }
