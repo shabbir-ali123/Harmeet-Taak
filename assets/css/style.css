@@ -1430,7 +1430,10 @@ textarea:focus::placeholder {
   font-size: 23px;
 }
 @media (max-width: 768px) {
-  .background{
-    display: none !important;
+  .top-background,
+  .service-background,
+  .portfolio-background,
+  .top-right-background {
+    display: none;
   }
 }
