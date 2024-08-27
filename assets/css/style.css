@@ -1431,13 +1431,6 @@ textarea:focus::placeholder {
   font-size: 23px;
 }
 @media (max-width: 768px) {
-  .top-background,
-  .service-background,
-  .portfolio-background,
-  .top-right-background {
-    display: none !important;
-  }
-
   .main-container {
     width: 95%;
     overflow: hidden;
