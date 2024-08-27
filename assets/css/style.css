@@ -1429,8 +1429,8 @@ textarea:focus::placeholder {
   padding-top: 3rem;
   font-size: 23px;
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .background{
-    display: none;
+    display: none !important;
   }
 }
