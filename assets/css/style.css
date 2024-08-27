@@ -1434,6 +1434,6 @@ textarea:focus::placeholder {
   .service-background,
   .portfolio-background,
   .top-right-background {
-    display: none;
+    display: none !important;
   }
 }
