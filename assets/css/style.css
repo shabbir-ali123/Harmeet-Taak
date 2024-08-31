@@ -1099,7 +1099,7 @@ textarea:focus::placeholder {
   background: #00bfff;
   filter: blur(174px);
   position: absolute;
-  left: 57%;
+  left: 40%;
 }
 .process-container {
   width: 85%;
@@ -1115,18 +1115,24 @@ textarea:focus::placeholder {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 8rem;
+  margin: 7rem 0;
 }
+
 .icon-container {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  text-decoration: none;
   gap: 14px;
 }
 .circle-container {
-  width: 111px;
-  height: 110px;
+  width: 100px;
+  height: 100px;
   background: #1b2b5a;
   border: 1px solid #0d1a3d;
   border-radius: 52px;
@@ -1134,6 +1140,10 @@ textarea:focus::placeholder {
   align-items: center;
   justify-content: center;
 }
+.icon-container.active .circle-container {
+  background-color: brown;
+}
+
 .circle-container img {
   width: 50px;
 }
@@ -1148,6 +1158,16 @@ textarea:focus::placeholder {
     gap: 22px;
   }
 }
+@media (min-width: 768px) {
+  .process-details {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /* border-bottom: 2px solid white; */
+    z-index: 99999;
+  }
+}
+
 /* responsive nessa */
 
 @media (max-width: 768px) {
@@ -1241,7 +1261,7 @@ textarea:focus::placeholder {
 .research-details {
   width: 100%;
   background: linear-gradient(135deg, #0d1a3d, #1b2b5a);
-  padding-bottom: 1rem;
+  padding-bottom: 100px;
   margin-top: 5rem;
 }
 .research-container {
@@ -1370,7 +1390,7 @@ textarea:focus::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 2rem;
+  padding: 3rem 0px;
 }
 .persona-image {
   width: 85%;
@@ -1406,7 +1426,7 @@ textarea:focus::placeholder {
 .analysis {
   width: 100%;
   background: linear-gradient(135deg, #0d1a3d, #1b2b5a);
-  padding-bottom: 5rem;
+  padding: 5rem 0;
 }
 .analysis-container {
   width: 85%;

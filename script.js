@@ -29,4 +29,28 @@ navLinks.forEach((link) => {
     navLinks.forEach((link) => link.classList.remove("active"));
     link.classList.add("active");
   });
+
+  // portfolio sec
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  sections.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href").includes(current)) {
+      link.classList.add("active");
+    }
+  });
+});
+
+sections.forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.forEach((link) => link.classList.remove("active"));
+    link.classList.add("active");
+  });
 });
