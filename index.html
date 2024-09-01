@@ -630,24 +630,26 @@
         });
       });
 
-      document
-        .getElementById("see-more")
-        .addEventListener("click", function (event) {
-          event.preventDefault(); // Prevent the page from refreshing
-          var dots = document.getElementById("dots");
-          var moreText = document.getElementById("more-text");
-          var seeMoreLink = document.getElementById("see-more");
+      document.querySelectorAll(".testimonial-card").forEach(function (card) {
+        card
+          .querySelector("#see-more")
+          .addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the page from refreshing
+            var dots = card.querySelector("#dots");
+            var moreText = card.querySelector("#more-text");
+            var seeMoreLink = card.querySelector("#see-more");
 
-          if (dots.style.display === "none") {
-            dots.style.display = "inline";
-            moreText.style.display = "none";
-            seeMoreLink.textContent = "See More";
-          } else {
-            dots.style.display = "none";
-            moreText.style.display = "inline";
-            seeMoreLink.textContent = "See Less";
-          }
-        });
+            if (dots.style.display === "none") {
+              dots.style.display = "inline";
+              moreText.style.display = "none";
+              seeMoreLink.textContent = "See More";
+            } else {
+              dots.style.display = "none";
+              moreText.style.display = "inline";
+              seeMoreLink.textContent = "See Less";
+            }
+          });
+      });
     </script>
     <script src="./script.js"></script>
   </body>
