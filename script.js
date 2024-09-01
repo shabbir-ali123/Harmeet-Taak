@@ -54,3 +54,14 @@ sections.forEach((link) => {
     link.classList.add("active");
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const card5 = document.getElementById("card-5");
+  const seeAllBtn = document.getElementById("see-all-btn");
+
+  seeAllBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    card5.style.display = "block";
+    seeAllBtn.style.display = "none";
+  });
+});
