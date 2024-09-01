@@ -641,6 +641,7 @@ nav ul li a.active {
   .portfolio-cards-container {
     grid-template-columns: 1fr;
     gap: 15px;
+    grid-template-rows: repeat(5, 400px);
   }
 }
 
@@ -1491,7 +1492,7 @@ textarea:focus::placeholder {
 }
 .step-line {
   height: 2px;
-  width: 450px;
+  width: 400px;
   background-color: #ebdcfd;
   margin: 0 auto;
   position: absolute;
@@ -1506,4 +1507,7 @@ textarea:focus::placeholder {
 .mdm-design {
   width: 90%;
   margin: 0 auto;
+}
+.tibco-sec {
+  margin-top: 100px;
 }
