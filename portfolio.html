@@ -21,13 +21,19 @@
       content: "";
       display: block;
       height: 100px; /* Adjust this height to match the scroll-margin-top */
-      margin-top: -100px; /* Same value as height */
+      margin-top: 130px; /* Same value as height */
     }
     .design-container {
       padding-bottom: 100px;
     }
-    .user-persona {
-      padding-bottom: 100px;
+    .step-line {
+      height: 2px;
+      width: 208px;
+      background-color: #ebdcfd;
+      margin: 0 auto;
+      position: absolute;
+      bottom: 63%;
+      left: 83px;
     }
   </style>
   <body>
@@ -116,35 +122,37 @@
 
     <!-- my process -->
     <section class="process">
-      <div class="process-container">
-        <div class="heading-image">
-          <div class="circle-image">
-            <img src="./assets/images/Group 1000006821.png" alt="" />
-          </div>
-          <h3 class="section-heading">My Process</h3>
-          <div class="circle-image">
-            <img src="./assets/images/Group 1000006821.png" alt="" />
-          </div>
+      <div class="heading-image">
+        <div class="circle-image">
+          <img src="./assets/images/Group 1000006821.png" alt="" />
         </div>
-
+        <h3 class="section-heading">My Process</h3>
+        <div class="circle-image">
+          <img src="./assets/images/Group 1000006821.png" alt="" />
+        </div>
+      </div>
+      <div class="process-container">
         <div class="process-details">
           <div class="icon-container">
             <a href="#discovery" class="circle-container">
               <img src="./assets/images/discovery.png" alt="" />
             </a>
             <h3>Discover</h3>
+            <div class="step-line"></div>
           </div>
           <div class="icon-container">
             <a href="#define" class="circle-container">
               <img src="./assets/images/define.png" alt="" />
             </a>
             <h3>Define</h3>
+            <div class="step-line"></div>
           </div>
           <div class="icon-container">
             <a href="#ideate" class="circle-container">
               <img src="./assets/images/ideate.png" alt="" />
             </a>
             <h3>Ideate</h3>
+            <div class="step-line"></div>
           </div>
           <div class="icon-container">
             <a href="#design" class="circle-container">
@@ -152,9 +160,8 @@
             </a>
             <h3>Design</h3>
           </div>
-
-          <div class="process-background background"></div>
         </div>
+        <div class="process-background background"></div>
 
         <!-- Combined Research, Design, and Analysis Sections -->
         <div id="discovery-define-ideate-design">
@@ -532,8 +539,15 @@
 
           links.forEach((link) => {
             link.parentElement.classList.remove("active");
+            link.parentElement.querySelector(
+              ".step-line"
+            ).style.backgroundColor = ""; // Reset step-line background color
+
             if (link.getAttribute("href") === `#${sections[index].id}`) {
               link.parentElement.classList.add("active");
+              link.parentElement.querySelector(
+                ".step-line"
+              ).style.backgroundColor = "#00bfff"; // Change step-line background color
             }
           });
         }
@@ -544,16 +558,50 @@
         // Set active link on click
         document.querySelectorAll(".icon-container a").forEach((anchor) => {
           anchor.addEventListener("click", function () {
-            document
-              .querySelectorAll(".icon-container")
-              .forEach((el) => el.classList.remove("active"));
+            document.querySelectorAll(".icon-container").forEach((el) => {
+              el.classList.remove("active");
+              el.querySelector(".step-line").style.backgroundColor = ""; // Reset step-line background color
+            });
             this.parentElement.classList.add("active");
+            this.parentElement.querySelector(
+              ".step-line"
+            ).style.backgroundColor = "#00bfff"; // Change step-line background color
           });
         });
 
         // Initialize active link
         setActiveLink();
+
+        // Code for testimonial "See More" functionality
+        document.querySelectorAll(".testimonial-card").forEach((card) => {
+          const seeMoreLink = card.querySelector(".see-more");
+          const dots = card.querySelector(".dots");
+          const moreText = card.querySelector(".more-text");
+
+          seeMoreLink.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the page from refreshing
+
+            if (dots.style.display === "none") {
+              dots.style.display = "inline";
+              moreText.style.display = "none";
+              seeMoreLink.textContent = "See More";
+            } else {
+              dots.style.display = "none";
+              moreText.style.display = "inline";
+              seeMoreLink.textContent = "See Less";
+            }
+          });
+        });
       });
+
+      window.onscroll = function () {
+        var navbar = document.querySelector(".process-details");
+        if (window.pageYOffset > 0) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      };
     </script>
 
     <script src="script.js"></script>

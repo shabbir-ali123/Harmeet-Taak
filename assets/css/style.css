@@ -1096,20 +1096,23 @@ textarea:focus::placeholder {
   left: 40%;
 }
 .process-container {
-  width: 85%;
-  margin: 0 auto;
   padding-bottom: 7rem;
 }
 .heading-image {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 100px;
 }
 .process-details {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 7rem 0;
+
+  background: #253363;
+  padding: 25px 25px;
 }
 
 .icon-container {
@@ -1123,23 +1126,26 @@ textarea:focus::placeholder {
   color: white;
   text-decoration: none;
   gap: 14px;
+  position: relative;
 }
 .circle-container {
-  width: 100px;
-  height: 100px;
+  width: 82px;
+  height: 82px;
   background: #1b2b5a;
-  border: 1px solid #0d1a3d;
   border-radius: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .icon-container.active .circle-container {
-  background-color: brown;
+  background-color: #00bfff;
+}
+.icon-container:last-child::before {
+  display: none; /* Hide the line after the last icon */
 }
 
 .circle-container img {
-  width: 50px;
+  width: 31px;
 }
 @media (max-width: 768px) {
   .process-details {
@@ -1420,7 +1426,8 @@ textarea:focus::placeholder {
 .analysis {
   width: 100%;
   background: linear-gradient(135deg, #0d1a3d, #1b2b5a);
-  padding: 5rem 0;
+  padding-bottom: 5rem;
+  padding-top: 3rem;
 }
 .analysis-container {
   width: 85%;
