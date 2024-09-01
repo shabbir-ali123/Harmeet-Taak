@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Tibco</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+
     <!-- animation link -->
     <!-- <link
       rel="stylesheet"
@@ -22,18 +23,6 @@
       display: block;
       height: 100px; /* Adjust this height to match the scroll-margin-top */
       margin-top: 130px; /* Same value as height */
-    }
-    .design-container {
-      padding-bottom: 100px;
-    }
-    .step-line {
-      height: 2px;
-      width: 208px;
-      background-color: #ebdcfd;
-      margin: 0 auto;
-      position: absolute;
-      bottom: 63%;
-      left: 83px;
     }
   </style>
   <body>
@@ -525,7 +514,7 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const offset = document.querySelector(".process-details").offsetHeight; // Height of the fixed element
+        const offset = document.querySelector(".process-details").offsetHeight;
 
         function setActiveLink() {
           const sections = document.querySelectorAll("section");
@@ -560,16 +549,14 @@
           anchor.addEventListener("click", function () {
             document.querySelectorAll(".icon-container").forEach((el) => {
               el.classList.remove("active");
-              el.querySelector(".step-line").style.backgroundColor = ""; // Reset step-line background color
+              el.querySelector(".step-line").style.backgroundColor = "";
             });
             this.parentElement.classList.add("active");
             this.parentElement.querySelector(
               ".step-line"
-            ).style.backgroundColor = "#00bfff"; // Change step-line background color
+            ).style.backgroundColor = "#00bfff";
           });
         });
-
-        // Initialize active link
         setActiveLink();
 
         // Code for testimonial "See More" functionality

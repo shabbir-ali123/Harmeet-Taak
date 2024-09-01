@@ -1110,7 +1110,7 @@ textarea:focus::placeholder {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  overflow: hidden;
   background: #253363;
   padding: 25px 25px;
 }
@@ -1291,7 +1291,6 @@ textarea:focus::placeholder {
   content: "•";
   margin-right: 10px;
   color: #008ecc;
-  font-size: 2.2em;
 }
 .research-list p {
   font-size: 24px;
@@ -1486,4 +1485,25 @@ textarea:focus::placeholder {
   cursor: pointer;
   text-decoration: none;
   font-family: "satoshi";
+}
+.design-container {
+  padding-bottom: 100px;
+}
+.step-line {
+  height: 2px;
+  width: 450px;
+  background-color: #ebdcfd;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 63%;
+  left: 83px;
+}
+@media only screen and (max-width: 768px) {
+  .step-line {
+    display: none;
+  }
+}
+.mdm-design {
+  width: 90%;
+  margin: 0 auto;
 }
